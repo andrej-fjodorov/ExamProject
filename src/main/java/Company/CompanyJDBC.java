@@ -35,7 +35,7 @@ public class CompanyJDBC implements CompanyRepository{
         return 0;
     }
 
-    @Override
+
     public void deleteById(int id) {
 
     }

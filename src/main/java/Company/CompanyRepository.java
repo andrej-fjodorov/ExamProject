@@ -7,5 +7,5 @@ public interface CompanyRepository {
     Company getById (int id);
     int create (String name);
     int create (String name, String description);
-    void deleteById (int id);
+
 }

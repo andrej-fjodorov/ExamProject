@@ -9,6 +9,8 @@ public class CompanyJDBC implements CompanyRepository{
     private final static String ADD_NEW_COMPANY="insert into company (name, description) values (?,?)";
     private final static String GET_LAST_ADDED_COMPANY="select*from company where \"deleted_at\" is null order by \"id\" desc limit 1";
     private final static String DELETE_COMPANY="delete from company where \"id\"=?";
+    private final static String GET_COMPANY_BY_ID="select*from company where \"id\"=?";
+    private final static String DELETE_COMPANY_BY_NAME="delete from company where \"name\"=?";
 
     @Override
     public List<Company> getAll() {

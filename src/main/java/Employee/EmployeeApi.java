@@ -6,11 +6,9 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class EmployeeApi {
+public class EmployeeApi  implements EmployeeApiRepo{
     private static final String path = "/employee";
-    private final static String prefix = "AK-";
-
-    private String uri = "https://x-clients-be.onrender.com";
+    private static final String  uri = "https://x-clients-be.onrender.com";
     public List<Employee> getAll(int companyId) {
         return given()
                 .baseUri(uri + path)

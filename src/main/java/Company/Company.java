@@ -73,4 +73,7 @@ public class Company {
                 ", deletedAt=" + deletedAt +
                 '}';
     }
+
+    public void setDeletedAt(java.sql.Timestamp deletedAt) {
+    }
 }
